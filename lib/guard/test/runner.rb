@@ -57,7 +57,7 @@ module Guard
                      else
                        "ruby"
                      end
-        cmd_parts << "-Itest"
+        cmd_parts << "-Itest -Ilib"
         cmd_parts << "-r bundler/setup" if bundler?
         cmd_parts << "-rubygems" if rubygems?
 
