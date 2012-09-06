@@ -68,10 +68,10 @@ module Guard
 
         paths.each { |path| cmd_parts << "\"./#{path}\"" }
 
-        unless drb?
-          cmd_parts << "--use-color"
-          cmd_parts << "--runner=guard"
-        end
+        #unless drb?
+        #  cmd_parts << "--use-color"
+        #  cmd_parts << "--runner=guard"
+        #end
 
         cmd_parts << @options[:cli]
 
